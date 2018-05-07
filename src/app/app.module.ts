@@ -10,6 +10,7 @@ import { AppsettingsComponent } from './componentes/appsettings/appsettings.comp
 import { AppmenuComponent } from './componentes/appmenu/appmenu.component';
 import { AppfooterComponent } from './componentes/appfooter/appfooter.component';
 import { ReservaComponent } from './componentes/reserva/reserva.component';
+import { AppinicioComponent } from './componentes/appinicio/appinicio.component';
 
 
 @NgModule({
@@ -20,7 +21,8 @@ import { ReservaComponent } from './componentes/reserva/reserva.component';
     AppsettingsComponent,
     AppmenuComponent,
     AppfooterComponent,
-    ReservaComponent
+    ReservaComponent,
+    AppinicioComponent
   ],
   imports: [
     BrowserModule,
