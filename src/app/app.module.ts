@@ -11,6 +11,9 @@ import { AppmenuComponent } from './componentes/appmenu/appmenu.component';
 import { AppfooterComponent } from './componentes/appfooter/appfooter.component';
 import { ReservaComponent } from './componentes/reserva/reserva.component';
 import { AppinicioComponent } from './componentes/appinicio/appinicio.component';
+import { SignInComponent } from './user/sign-in/sign-in.component';
+import { SignUpComponent } from './user/sign-up/sign-up.component';
+import { HomeComponent } from './home/home.component';
 
 
 @NgModule({
@@ -22,7 +25,10 @@ import { AppinicioComponent } from './componentes/appinicio/appinicio.component'
     AppmenuComponent,
     AppfooterComponent,
     ReservaComponent,
-    AppinicioComponent
+    AppinicioComponent,
+    SignInComponent,
+    SignUpComponent,
+    HomeComponent,
   ],
   imports: [
     BrowserModule,
