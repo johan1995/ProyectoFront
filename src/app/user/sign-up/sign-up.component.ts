@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { NgForm } from '@angular/forms';
+import { PersonaModel } from '../../model/persona.model';
 
 
 @Component({
@@ -9,7 +10,11 @@ import { NgForm } from '@angular/forms';
 })
 export class SignUpComponent implements OnInit {
 
-  constructor() { }
+  private persona: PersonaModel;
+  constructor() { 
+
+    this.persona=new PersonaModel;
+  }
 
   ngOnInit() {
   }

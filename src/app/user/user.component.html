@@ -1,20 +1,38 @@
-<div class="container">
-  <div class="row">
-    <div class="col s8 offset-s2">
-      <div class="card grey lighten-2">
-        <div class="card-tabs">
-          <ul class="tabs tabs-fixed-width tabs-transparent">
-            <li class="tab">
-              <a routerLink='/login' routerLinkActive='active'>Sign In</a>
-            </li>
-            <li class="tab">
-              <a  routerLink='/signup' routerLinkActive='active'>Sign Up</a>
-            </li>
-          </ul>
-        </div>
-        <div class="card-content white">
+
+   <!-- Navigation -->
+   <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <ul>
+      <li><a class="active" href="#home">Home</a></li>
+      <li><a href="#news">News</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><a href="#about">About</a></li>
+    </ul>
+  </nav>
+
+  <div class="container">
+    <div class="row">
+    <div class="col-md-6 col-md-offset-3">
+      <div class="panel panel-login">
+        <div class="panel-heading">
           <div class="row">
-            <router-outlet></router-outlet>
+            <div class="col-xs-6">
+              <a routerLink='/login' class="active" id="login-form-link">Login</a>
+              
+            </div>
+            <div class="col-xs-6">
+              <a routerLink='/signup' id="register-form-link">Register</a>
+            </div>
+          </div>
+          <hr>
+        </div>
+        <div class="panel-body">
+          <div class="row">
+            <div class="col-lg-12">
+       
+              <section class="content">
+                <router-outlet></router-outlet>
+              </section>
+            </div>
           </div>
         </div>
       </div>

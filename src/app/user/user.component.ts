@@ -15,4 +15,8 @@ export class UserComponent implements OnInit {
   ngOnInit() {
   }
 
+  private loadUser():void{
+    
+  }
+
 }
