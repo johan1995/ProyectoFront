@@ -5,4 +5,6 @@ export class PersonaModel{
 	public tipo_documento: String;
 	public num_documento: String;
 	public telefono: String;
+	public email: String;
+	public tipo_persona:String;
 }

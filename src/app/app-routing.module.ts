@@ -4,7 +4,7 @@ import { AppComponent } from './app.component';
 import { ReservaComponent } from './componentes/reserva/reserva.component';
 import { AppinicioComponent } from './componentes/appinicio/appinicio.component';
 import { UserComponent } from './user/user.component';
-import { SignUpComponent } from './user/sign-up/sign-up.component';
+import { SignUpComponent } from './sign-up/sign-up.component';
 import { SignInComponent } from './user/sign-in/sign-in.component';
 import { HomeComponent } from './home/home.component';
 

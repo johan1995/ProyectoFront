@@ -1,0 +1,19 @@
+
+<form (submit)="saveOrUpdate()" >
+        <input class="input" name= "id_per"  type="text" id="id_persona" [(ngModel)]="persona.idpersona" placeholder="&#128100;  Nombre" required autofocus>
+        <input class="input" name= "nombre"  type="text" id="nombre" [(ngModel)]="persona.nombre" placeholder="&#128100;  Nombre" required autofocus>
+        <input class="input" name= "apellido"  type="text"  id="apellido" [(ngModel)]="persona.apellido" placeholder="&#128222;  Apellidos" required>
+        <input class="input" name= "tipo_doc"  type="text"  id="tipo_doc" [(ngModel)]="persona.tipo_documento" placeholder="&#8962;  Tipo Documento" required>
+        <input class="input" name= "num_documento"  type="text"  id="num_doc" [(ngModel)]="persona.num_documento" placeholder="&#8962;  Nª de documento" required>
+        <input class="input" name= "telefono"   type="text"  id="telefono" [(ngModel)]="persona.telefono" placeholder="&#8962;  Telefono" required>
+        <input class="input" name= "email"   type="text"  id="email" [(ngModel)]="persona.email" placeholder="&#8962;  Email" required>
+        <input class="input" name= "tipo_persona"   type="text"  id="tipo_persona" [(ngModel)]="persona.tipo_persona" placeholder="&#8962;  Tipo de Persona" required>
+        <div class="btn__form">
+          <input class="btn__submit" type="submit"  value="REGISTRAR">
+          <input class="btn__reset" type="reset" value="LIMPIAR">	
+        </div>
+
+        <div *ngIf="!isValid" class="alert alert-danger">
+            <strong>Danger!</strong> {{message}}
+        </div>
+</form>
