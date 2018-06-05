@@ -1,19 +1,98 @@
 
-<form (submit)="saveOrUpdate()" >
-        <input class="input" name= "id_per"  type="text" id="id_persona" [(ngModel)]="persona.idpersona" placeholder="&#128100;  Nombre" required autofocus>
-        <input class="input" name= "nombre"  type="text" id="nombre" [(ngModel)]="persona.nombre" placeholder="&#128100;  Nombre" required autofocus>
-        <input class="input" name= "apellido"  type="text"  id="apellido" [(ngModel)]="persona.apellido" placeholder="&#128222;  Apellidos" required>
-        <input class="input" name= "tipo_doc"  type="text"  id="tipo_doc" [(ngModel)]="persona.tipo_documento" placeholder="&#8962;  Tipo Documento" required>
-        <input class="input" name= "num_documento"  type="text"  id="num_doc" [(ngModel)]="persona.num_documento" placeholder="&#8962;  Nª de documento" required>
-        <input class="input" name= "telefono"   type="text"  id="telefono" [(ngModel)]="persona.telefono" placeholder="&#8962;  Telefono" required>
-        <input class="input" name= "email"   type="text"  id="email" [(ngModel)]="persona.email" placeholder="&#8962;  Email" required>
-        <input class="input" name= "tipo_persona"   type="text"  id="tipo_persona" [(ngModel)]="persona.tipo_persona" placeholder="&#8962;  Tipo de Persona" required>
-        <div class="btn__form">
-          <input class="btn__submit" type="submit"  value="REGISTRAR">
-          <input class="btn__reset" type="reset" value="LIMPIAR">	
-        </div>
-
+<form (submit)="saveOrUpdate()" class="form-horizontal" >
         <div *ngIf="!isValid" class="alert alert-danger">
             <strong>Danger!</strong> {{message}}
         </div>
-</form>
+
+
+         <div class="box-body">
+          <div class="form-group">
+                <label for="inputEmail3" class="col-sm-2 control-label">Nombre</label>
+        
+                <div class="col-sm-10">
+                  <input class="form-control" name= "nombre"  type="text" id="nombre" [(ngModel)]="persona.nombre" placeholder="&#128100;  Nombre" required autofocus>
+                </div>
+          </div>
+          
+          <div class="form-group">
+              <label for="inputEmail3" class="col-sm-2 control-label">Apellidos</label>
+      
+              <div class="col-sm-10">
+                  <input class="form-control" name= "apellido"  type="text"  id="apellido" [(ngModel)]="persona.apellido" placeholder="&#128222;  Apellidos" required>
+              </div>
+        </div> 
+
+        <div class="form-group">
+            <label for="inputEmail3" class="col-sm-2 control-label">Tipo Documento</label>
+    
+            <div class="col-sm-10">
+                <input class="form-control" name= "tipo_doc"  type="text"  id="tipo_doc" [(ngModel)]="persona.tipo_documento" placeholder="&#8962;  Tipo Documento" required>
+            </div>
+      </div>
+      
+      <div class="form-group">
+          <label for="inputEmail3" class="col-sm-2 control-label">Nª Documento</label>
+  
+          <div class="col-sm-10">
+              <input class="form-control" name= "form-control"  type="text"  id="num_doc" [(ngModel)]="persona.num_documento" placeholder="&#8962;  Nª de documento" required>
+          </div>
+      </div>  
+      <div class="form-group">
+              <label for="inputEmail3" class="col-sm-2 control-label">Telefono</label>
+      
+              <div class="col-sm-10">
+                  <input class="form-control" name= "telefono"   type="text"  id="telefono" [(ngModel)]="persona.telefono" placeholder="&#8962;  Telefono" required>
+              </div>
+      </div>
+              <div class="form-group">
+                  <label for="inputEmail3" class="col-sm-2 control-label">Email</label>
+          
+                  <div class="col-sm-10">
+                      <input class="form-control" name= "email"   type="text"  id="email" [(ngModel)]="persona.email" placeholder="&#8962;  Email" required>
+                  </div>
+            </div>
+
+
+            <div class="form-group">
+                <label for="inputEmail3" class="col-sm-2 control-label">Tipo Persona</label>
+        
+                <div class="col-sm-10">
+                    <input class="form-control" name= "tipo_persona"   type="text"  id="tipo_persona" [(ngModel)]="persona.tipo_persona" placeholder="&#8962;  Tipo de Persona" required>
+                </div>
+          </div>
+
+
+          <div class="form-group">
+            <label for="inputEmail3" class="col-sm-2 control-label">Username</label>
+    
+            <div class="col-sm-10">
+              <input type="email" class="form-control" id="inputEmail3" placeholder="Username">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="inputPassword3" class="col-sm-2 control-label">Password</label>
+    
+            <div class="col-sm-10">
+              <input type="password" class="form-control" id="inputPassword3" placeholder="Password">
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="inputPassword3" class="col-sm-2 control-label">confirmar Password</label>
+    
+            <div class="col-sm-10">
+              <input type="password" class="form-control" id="inputPassword4" placeholder="Confirmar Password">
+            </div>
+          </div>
+
+          <div class="form-group">
+            <div class="col-sm-offset-2 col-sm-10">
+                <div class="btn__form">
+                    <input class="btn__submit" type="submit"  value="REGISTRAR">
+                    <input class="btn__reset" type="reset" value="LIMPIAR">	
+                  </div>
+            </div>
+          </div>
+        </div>
+
+      </form>

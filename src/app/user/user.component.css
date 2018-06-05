@@ -11,11 +11,20 @@ ul {
     width: 100%;
 }
 
+
 li {
-    float: left;
+    float: right;
 }
 
 li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.navbar-brand{
     display: block;
     color: white;
     text-align: center;
@@ -27,3 +36,13 @@ li a:hover:not(.active) {
     background-color: #111;
 }
 
+.buscador_inicio{
+    text-align: center;
+    background-color: rgba(17, 17, 17, 0.555);
+    float: center;
+    padding: 1%;
+    margin: 1%;
+}
+.buscador2{
+    margin: 1%;
+}

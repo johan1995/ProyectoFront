@@ -9,8 +9,10 @@ import { UserService } from './user.service';
   providers: [UserService]
 })
 export class UserComponent implements OnInit {
-
-  constructor(private userService: UserService) { }
+  fullImagePath: string;
+  constructor(private userService: UserService) {
+    
+   }
 
   ngOnInit() {
   }
